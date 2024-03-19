@@ -36,4 +36,9 @@ public class UserController {
     public User login(@RequestBody User user) {
         return service.login(user);
     }
+
+    @PostMapping("/logout")
+    public void logout(@RequestBody User email) {
+        service.logout(email.getEmail());
+    }
 }
