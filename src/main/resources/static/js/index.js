@@ -12,7 +12,7 @@ function loadAndDisplayUsers() {
     // Clear any existing content in the userListElement
     userListElement.innerHTML = "Loading...";
     // Retrieve the userList from Local Storage
-    fetch('http://localhost:8080/api/v1/users')
+    fetch('http://localhost:8081/api/v1/users')
         .then((response) => {
             return response.json();
         })
@@ -44,7 +44,7 @@ window.addEventListener("load", loadAndDisplayUsers);
 
 
 function handleLogout() {
-    fetch('http://localhost:8080/api/v1/users/logout', {
+    fetch('http://localhost:8081/api/v1/users/logout', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
