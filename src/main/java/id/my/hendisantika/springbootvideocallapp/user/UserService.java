@@ -18,4 +18,9 @@ import java.util.List;
 @Service
 public class UserService {
     private static final List<User> USERS_LIST = new ArrayList<>();
+
+    public void register(User user) {
+        user.setStatus("online");
+        USERS_LIST.add(user);
+    }
 }
