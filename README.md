@@ -29,3 +29,14 @@ The following guides illustrate how to use some features concretely:
 
 ### Images Screen shot
 
+Registration Page
+
+![Registration Page](img/register.png "Registration Page")
+
+Login Page
+
+![Login Page](img/login.png "Login Page")
+
+Home Page
+
+![Home Page](img/home.png "Home Page")
